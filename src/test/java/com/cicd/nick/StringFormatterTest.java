@@ -20,4 +20,10 @@ class StringFormatterTest {
 
         assertEquals("Hejsan", result);
     }
+
+    @Test
+    void toNameFormat2() {
+        String result = stringFormatter.toNameFormat("hejsan");
+        assertEquals("hejsan", result);
+    }
 }
