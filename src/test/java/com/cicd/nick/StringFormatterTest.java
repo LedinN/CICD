@@ -1,5 +1,6 @@
 package com.cicd.nick;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -25,5 +26,9 @@ class StringFormatterTest {
     void toNameFormat2() {
         String result = stringFormatter.toNameFormat("hejsan");
         assertEquals("hejsan", result);
+    }
+    @Test
+    void testingGithubActions(){
+        Assertions.assertEquals(5,3);
     }
 }
